@@ -2,7 +2,9 @@
 
 [ext_resource path="res://Character.gd" type="Script" id=1]
 [ext_resource path="res://assets/spaceShooter2_spritesheet.png" type="Texture" id=2]
-[ext_resource path="res://Cup.tscn" type="PackedScene" id=3]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 5.52955, 3.66219 )
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 4, 4 )
@@ -17,14 +19,12 @@ texture = ExtResource( 2 )
 region_enabled = true
 region_rect = Rect2( 568, 191, 98, 94 )
 
+[node name="ActionBox" type="Area2D" parent="Sprite"]
+editor/display_folded = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite/ActionBox"]
+position = Vector2( -0.0657225, 45.9144 )
+shape = SubResource( 2 )
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( 1 )
-
-[node name="Camera2D" type="Camera2D" parent="."]
-current = true
-zoom = Vector2( 0.3, 0.3 )
-
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-
-[node name="Cup" parent="CanvasLayer" instance=ExtResource( 3 )]
-position = Vector2( -173.657, -85.1378 )
