@@ -4,7 +4,7 @@
 [ext_resource path="res://UI.tscn" type="PackedScene" id=2]
 [ext_resource path="res://medievalTileset.tres" type="TileSet" id=3]
 [ext_resource path="res://Player.tscn" type="PackedScene" id=4]
-[ext_resource path="res://InteractArea.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Door.tscn" type="PackedScene" id=5]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 1.25449, 2.28354 )
@@ -29,9 +29,10 @@ tile_data = PoolIntArray( 720917, 0, 393221 )
 [node name="Player" parent="." instance=ExtResource( 4 )]
 position = Vector2( 253.979, 177.736 )
 
-[node name="InteractArea" parent="." instance=ExtResource( 5 )]
+[node name="Door" parent="." instance=ExtResource( 5 )]
 position = Vector2( 341.97, 190.804 )
+target_scene = "res://TestSubLevel.tscn"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractArea"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Door"]
 position = Vector2( -0.046051, -1.24388 )
 shape = SubResource( 1 )

@@ -1,20 +1,21 @@
 extends Area2D
+class_name Door
+
+export (String) var target_scene = "res://LevelName.tscn"
+
 var player: Character
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
+func _init():
+	add_to_group('interactable')
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	add_to_group('interactable')
-	pass # Replace with function body.
+	pass
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	pass
-#	if overlaps_area(player.action_box):
-#		print('asdf')
+	if overlaps_area(player.action_box) and Input.is_action_pressed("interact"):
+		SceneChanger.change_scene(target_scene)
 
 func set_player(player: Character):
 	self.player = player
