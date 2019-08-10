@@ -25,7 +25,6 @@ func get_input():
 	if velocity.x != 0 or velocity.y != 0:
 		var angle = rad2deg(velocity.angle()) - 90
 		$Sprite.set_rotation_degrees(angle)
-		print(angle)
 	velocity = velocity.normalized() * speed
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
