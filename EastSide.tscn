@@ -1,11 +1,19 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://BaseLevel.tscn" type="PackedScene" id=1]
 [ext_resource path="res://EastSide.tres" type="TileSet" id=2]
 [ext_resource path="res://Door.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Player.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Wall.tscn" type="PackedScene" id=5]
 
-[sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 29.9999, 30.5262 )
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 25.7892, 27.3687 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 10, 156.573 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 62.6246, 83.9412 )
 
 [node name="EastSide" index="0" instance=ExtResource( 1 )]
 
@@ -28,7 +36,27 @@ tile_data = PoolIntArray( -131068, 1, 458753 )
 position = Vector2( 361.046, -260.783 )
 target_scene = "res://Restaurant.tscn"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Door" index="0"]
-shape = SubResource( 1 )
+[node name="CollisionShape2D" parent="Door" index="0"]
+shape = SubResource( 3 )
+
+[node name="Player" parent="." index="4" instance=ExtResource( 4 )]
+position = Vector2( -213.684, -121.053 )
+
+[node name="Wall" parent="." index="5" instance=ExtResource( 5 )]
+position = Vector2( -434.737, -123.158 )
+
+[node name="CollisionShape2D" parent="Wall" index="0"]
+position = Vector2( 124.211, 2.10529 )
+shape = SubResource( 2 )
+
+[node name="Door2" parent="." index="6" instance=ExtResource( 3 )]
+
+[node name="CollisionShape2D" parent="Door2" index="0"]
+position = Vector2( -295.789, -117.895 )
+shape = SubResource( 4 )
 
 [editable path="Door"]
+
+[editable path="Wall"]
+
+[editable path="Door2"]

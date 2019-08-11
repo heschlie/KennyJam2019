@@ -46,7 +46,7 @@ format = 1
 tile_data = PoolIntArray( 65534, 0, 196615, 196611, 0, 196612 )
 
 [node name="Player" parent="." index="3" instance=ExtResource( 3 )]
-position = Vector2( -45.8879, -73.925 )
+position = Vector2( 216.539, 168.655 )
 
 [node name="Door" parent="." index="5" instance=ExtResource( 4 )]
 editor/display_folded = true
