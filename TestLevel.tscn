@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://TestLevel.gd" type="Script" id=1]
+[ext_resource path="res://BaseLevel.gd" type="Script" id=1]
 [ext_resource path="res://UI.tscn" type="PackedScene" id=2]
 [ext_resource path="res://medievalTileset.tres" type="TileSet" id=3]
 [ext_resource path="res://Player.tscn" type="PackedScene" id=4]
@@ -27,7 +27,8 @@ format = 1
 tile_data = PoolIntArray( 720917, 0, 393221 )
 
 [node name="Player" parent="." instance=ExtResource( 4 )]
-position = Vector2( 253.979, 177.736 )
+position = Vector2( 269.785, 176.166 )
+speed = 100
 
 [node name="Door" parent="." instance=ExtResource( 5 )]
 position = Vector2( 341.97, 190.804 )
