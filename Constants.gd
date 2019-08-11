@@ -11,6 +11,7 @@ enum ITEMS {
 	Morningstar
 	Workshop
 	Deed
+	Dummy
 }
 
 var current_item = ITEMS.Stapler
