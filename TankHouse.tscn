@@ -12,7 +12,7 @@ extents = Vector2( 186.416, 66.0343 )
 [sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 105.385, 57.4402 )
 
-[node name="TankHouse" index="0" instance=ExtResource( 1 )]
+[node name="TankHouse" instance=ExtResource( 1 )]
 
 [node name="TileMap" type="TileMap" parent="." index="1"]
 scale = Vector2( 3, 3 )
@@ -31,7 +31,7 @@ shape = SubResource( 1 )
 
 [node name="Door" parent="." index="4" instance=ExtResource( 5 )]
 position = Vector2( 3.68311, 146.101 )
-target_scene = "res://Eastside.tscn"
+target_scene = "res://EastSide.tscn"
 
 [node name="CollisionShape2D" parent="Door" index="0"]
 shape = SubResource( 2 )
