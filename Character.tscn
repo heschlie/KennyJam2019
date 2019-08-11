@@ -7,13 +7,14 @@
 extents = Vector2( 5.52955, 3.66219 )
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 4, 4 )
+extents = Vector2( 7.99863, 9.26101 )
 
 [node name="Character" type="KinematicBody2D"]
 script = ExtResource( 1 )
+speed = 300
 
 [node name="Sprite" type="Sprite" parent="."]
-scale = Vector2( 0.1, 0.1 )
+scale = Vector2( 0.3, 0.3 )
 texture = ExtResource( 2 )
 region_enabled = true
 region_rect = Rect2( 568, 191, 98, 94 )

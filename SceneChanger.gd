@@ -28,6 +28,7 @@ func _deferred_change_scene(scene: String, delay: float):
 	root.remove_child(current_scene)
 	current_scene = s
 	anim.play_backwards("fade")
+	current_scene.link_player()
 
 func load_scene(path: String):
 	if scenes.has(path):
