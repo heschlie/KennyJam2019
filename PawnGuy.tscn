@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Npc.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/Male_3_Pickup9.png" type="Texture" id=2]
+
+[node name="PawnGuy" index="0" instance=ExtResource( 1 )]
+dialog = "Bring me something valuable to pawn for your house deed.  "
+
+[node name="Sprite" parent="." index="0"]
+texture = ExtResource( 2 )
+region_rect = Rect2( 80.2693, 319.913, 97.401, 148.049 )
+
+[node name="Container" parent="Sprite" index="1"]
+modulate = Color( 1, 1, 1, 0.00392157 )
+
+[node name="Label" parent="Sprite/Container" index="1"]
+margin_top = 17.0
+margin_bottom = 266.0
+text = "Bring me something valuable to pawn for your house deed.  "
+
+[node name="CollisionShape2D" parent="Hitbox" index="0"]
+position = Vector2( 0, 52.1843 )

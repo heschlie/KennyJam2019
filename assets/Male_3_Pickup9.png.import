@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Male_3_Pickup3.png-4a445e1af8b39d945b53cc4dfc626711.stex"
+path="res://.import/Male_3_Pickup9.png-43af41a5ce44be748372b4dd1d93edcd.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Male_3_Pickup3.png"
-dest_files=[ "res://.import/Male_3_Pickup3.png-4a445e1af8b39d945b53cc4dfc626711.stex" ]
+source_file="res://assets/Male_3_Pickup9.png"
+dest_files=[ "res://.import/Male_3_Pickup9.png-43af41a5ce44be748372b4dd1d93edcd.stex" ]
 
 [params]
 

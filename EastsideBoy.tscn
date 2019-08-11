@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Npc.tscn" type="PackedScene" id=1]
+[ext_resource path="res://eastsideBoy.png" type="Texture" id=2]
+
+[node name="EastsideBoy" index="0" instance=ExtResource( 1 )]
+dialog = "We are so poor here.  We can't even afford color."
+
+[node name="Sprite" parent="." index="0"]
+scale = Vector2( 1, 1 )
+texture = ExtResource( 2 )
+region_rect = Rect2( 1.83878, 0.0119748, 59.4027, 61.1565 )
+
+[node name="ActionBox" parent="Sprite" index="0"]
+editor/display_folded = false
+
+[node name="Container" parent="Sprite" index="1"]
+margin_left = -284.164
+margin_top = -342.723
+margin_right = 221.836
+margin_bottom = -59.7224
