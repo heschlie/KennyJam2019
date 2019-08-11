@@ -32,9 +32,20 @@ tile_data = PoolIntArray( 720917, 0, 393221 )
 [node name="Player" parent="." instance=ExtResource( 4 )]
 position = Vector2( 226.408, 192.656 )
 
-[node name="Npc" parent="." instance=ExtResource( 5 )]
-position = Vector2( 403.813, 265.672 )
+[node name="Npc1" parent="." instance=ExtResource( 5 )]
+position = Vector2( 405.618, 268.379 )
+has_item = 1
 dialog = "This is a test!"
+
+[node name="Npc2" parent="." instance=ExtResource( 5 )]
+position = Vector2( 227.43, 362.804 )
+has_item = 2
+wants_item = 1
+
+[node name="Npc3" parent="." instance=ExtResource( 5 )]
+position = Vector2( 57.7599, 262.627 )
+has_item = 3
+wants_item = 2
 
 [node name="Door" parent="." instance=ExtResource( 6 )]
 position = Vector2( 341.97, 190.804 )

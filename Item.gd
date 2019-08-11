@@ -1,7 +1,6 @@
 extends TextureRect
 class_name Item
 
-export (Constants.ITEMS) var current_item
 onready var items = {
 	Constants.ITEMS.Stapler: load_image("res://assets/tankRed_barrel2_outline.png"),
 	Constants.ITEMS.Cookbook: load_image("res://cookbook.png"),
@@ -15,11 +14,11 @@ onready var items = {
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	set_texture(items[current_item])
-	pass # Replace with function body.
+	Constants.connect("item_changed", self, "_on_item_change")
+	set_texture(items[Constants.current_item])
 
-func set_current_item(name: String):
-	self.current_item = name
+func _on_item_change(item):
+	set_texture(items[Constants.current_item])
 
 func load_image(path: String) -> ImageTexture:
 	var img = Image.new()

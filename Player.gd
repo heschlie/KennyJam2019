@@ -9,6 +9,9 @@ class_name Player
 func _ready():
 	pass # Replace with function body.
 
+func _process(delta):
+	get_input()
+
 func get_input():
 	velocity = Vector2()
 	if Input.is_action_pressed('right'):
@@ -26,7 +29,6 @@ func get_input():
 	velocity = velocity.normalized() * speed
 
 func _physics_process(delta):
-	get_input()
 	move_and_slide(velocity)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
