@@ -30,7 +30,7 @@ position = Vector2( 7.73119, -20.1958 )
 target_scene = "res://PawnShop.tscn"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Door" index="0"]
-position = Vector2( 0.157776, -3.8147e-006 )
+position = Vector2( 0.157776, -3.8147e-06 )
 shape = SubResource( 1 )
 
 [node name="Door2" parent="." index="5" instance=ExtResource( 4 )]
@@ -38,7 +38,7 @@ position = Vector2( 71.3162, 43.3893 )
 target_scene = "res://PawnShop.tscn"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Door2" index="0"]
-position = Vector2( 0.157776, -3.8147e-006 )
+position = Vector2( 0.157776, -3.8147e-06 )
 shape = SubResource( 1 )
 
 [node name="TileMap3" type="TileMap" parent="." index="6"]
