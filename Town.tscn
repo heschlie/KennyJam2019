@@ -19,14 +19,18 @@ extents = Vector2( 420.381, 13.1252 )
 extents = Vector2( 30.4783, 454.836 )
 
 [sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 19.6429, 10 )
 
 [sub_resource type="RectangleShape2D" id=6]
-
-[sub_resource type="RectangleShape2D" id=7]
+extents = Vector2( 23.5597, 10 )
 
 [sub_resource type="RectangleShape2D" id=8]
+extents = Vector2( 38.853, 44.3382 )
 
-[node name="Town" index="0" instance=ExtResource( 1 )]
+[sub_resource type="RectangleShape2D" id=7]
+extents = Vector2( 40.9825, 33.1387 )
+
+[node name="Town" instance=ExtResource( 1 )]
 
 [node name="TileMap" type="TileMap" parent="." index="0"]
 scale = Vector2( 3, 3 )
@@ -50,7 +54,7 @@ format = 1
 tile_data = PoolIntArray( 65534, 0, 196615, 196611, 0, 196612 )
 
 [node name="Player" parent="." index="3" instance=ExtResource( 3 )]
-position = Vector2( -45.8879, -73.925 )
+position = Vector2( 216.539, 168.655 )
 
 [node name="Door" parent="." index="5" instance=ExtResource( 4 )]
 editor/display_folded = true
@@ -113,7 +117,7 @@ shape = SubResource( 4 )
 
 [node name="Wall4" parent="." index="12" instance=ExtResource( 5 )]
 editor/display_folded = true
-position = Vector2( 103.772, -111.319 )
+position = Vector2( -350.47, -302.453 )
 
 [node name="CollisionShape2D" parent="Wall4" index="0"]
 position = Vector2( 0, -0.754715 )
@@ -121,25 +125,25 @@ shape = SubResource( 5 )
 
 [node name="Wall5" parent="." index="13" instance=ExtResource( 5 )]
 editor/display_folded = true
-position = Vector2( -119.244, -109.81 )
+position = Vector2( 308.046, -303.645 )
 
 [node name="CollisionShape2D" parent="Wall5" index="0"]
 shape = SubResource( 6 )
 
 [node name="Door4" parent="." index="14" instance=ExtResource( 4 )]
-editor/display_folded = true
-position = Vector2( -7.92445, 87.5459 )
+position = Vector2( -23.4, 262.664 )
 target_scene = "res://Wilderness.tscn"
 
 [node name="CollisionShape2D" parent="Door4" index="0"]
-shape = SubResource( 7 )
+shape = SubResource( 8 )
 
 [node name="Door5" parent="." index="15" instance=ExtResource( 4 )]
-position = Vector2( 103.753, -7.06288 )
+editor/display_folded = true
+position = Vector2( 311.69, -22.6349 )
 target_scene = "res://EastSide.tscn"
 
 [node name="CollisionShape2D" parent="Door5" index="0"]
-shape = SubResource( 8 )
+shape = SubResource( 7 )
 
 [editable path="Wall"]
 

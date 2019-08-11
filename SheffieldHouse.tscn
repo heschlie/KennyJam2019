@@ -7,7 +7,7 @@
 [ext_resource path="res://Wall.tscn" type="PackedScene" id=5]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 11.5135, 10 )
+extents = Vector2( 33.6742, 19.2884 )
 
 [sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 39.9458, 4.23617 )
@@ -15,13 +15,14 @@ extents = Vector2( 39.9458, 4.23617 )
 [node name="SheffieldHouse" index="0" instance=ExtResource( 1 )]
 
 [node name="TileMap" type="TileMap" parent="." index="1"]
+scale = Vector2( 3, 3 )
 tile_set = ExtResource( 2 )
 cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( -65539, 0, 262161, -65538, 0, 262165, -65537, 0, 262165, -131072, 0, 262165, -131071, 0, 262163, -3, 0, 393233, -2, 0, 393237, -1, 0, 393237, -65536, 0, 393237, -65535, 0, 393235, 65533, 0, 393233, 65534, 0, 393237, 65535, 0, 393237, 0, 0, 393237, 1, 0, 393235, 131069, 0, 458769, 131070, 0, 458770, 131071, 0, 393237, 65536, 0, 458770, 65537, 0, 458771 )
 
 [node name="Door" parent="." index="2" instance=ExtResource( 3 )]
-position = Vector2( -7.10806, 31.7772 )
+position = Vector2( -22.5785, 97.8404 )
 target_scene = "res://Town.tscn"
 
 [node name="CollisionShape2D" parent="Door" index="0"]
@@ -30,7 +31,7 @@ shape = SubResource( 1 )
 [node name="Player" parent="." index="3" instance=ExtResource( 4 )]
 
 [node name="Wall" parent="." index="4" instance=ExtResource( 5 )]
-position = Vector2( -7.52618, 42.6483 )
+position = Vector2( -22.5785, 107.457 )
 
 [node name="CollisionShape2D" parent="Wall" index="0"]
 shape = SubResource( 2 )

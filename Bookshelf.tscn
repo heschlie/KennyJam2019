@@ -5,6 +5,7 @@
 [sub_resource type="RectangleShape2D" id=1]
 
 [node name="Bookshelf" type="StaticBody2D"]
+scale = Vector2( 2, 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( 9.53674e-007, -9.53674e-007 )
