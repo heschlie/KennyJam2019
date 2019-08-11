@@ -19,6 +19,7 @@ tile_data = PoolIntArray( 0, 0, 2, 1, 0, 2, 2, 0, 2, 3, 0, 2, 4, 0, 2, 5, 0, 2, 
 
 [node name="Player" parent="." instance=ExtResource( 3 )]
 position = Vector2( 140.306, 43.8315 )
+speed = 100
 
 [node name="Door" parent="." instance=ExtResource( 4 )]
 target_scene = "res://TestLevel.tscn"
