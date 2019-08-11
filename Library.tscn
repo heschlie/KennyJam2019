@@ -91,6 +91,7 @@ position = Vector2( -10, -150 )
 [node name="Libarian" parent="." index="21" instance=ExtResource( 7 )]
 position = Vector2( -100, -140 )
 has_item = 1
+item_dialog = "Thanks!  Here's a book.  Make sure to return it when you're done."
 
 [editable path="Wall"]
 

@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Npc.tscn" type="PackedScene" id=1]
+[ext_resource path="res://giraffe.png" type="Texture" id=2]
+
+[node name="Girl" index="0" instance=ExtResource( 1 )]
+wants_item = 8
+has_item = 8
+dialog = "I only like guys with who look as manly as possible."
+
+[node name="Sprite" parent="." index="0"]
+texture = ExtResource( 2 )
+region_rect = Rect2( -3.88097, -9.22696, 170.406, 188.582 )
+
+[node name="Container" parent="Sprite" index="1"]
+margin_left = -323.383
+margin_top = -438.93
+margin_right = 182.617
+margin_bottom = -155.93
+
+[node name="CollisionShape2D" parent="." index="1"]
+position = Vector2( -0.500687, 16.9523 )
+
+[node name="Hitbox" parent="." index="2"]
+position = Vector2( -1.00137, 3.50482 )
