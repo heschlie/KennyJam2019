@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Npc.tscn" type="PackedScene" id=1]
+[ext_resource path="res://runeBlue_slab_024.png" type="Texture" id=2]
+
+[node name="Chef" index="0" instance=ExtResource( 1 )]
+wants_item = 1
+has_item = 2
+dialog = "Gotta impress my boss.  It's my first day as a chef!"
+
+[node name="Sprite" parent="." index="0"]
+texture = ExtResource( 2 )
+region_rect = Rect2( -7.53575, -11.4826, 72.8526, 107.734 )
