@@ -25,7 +25,7 @@ extents = Vector2( 19.6429, 10 )
 [sub_resource type="RectangleShape2D" id=6]
 extents = Vector2( 23.5597, 10 )
 
-[sub_resource type="RectangleShape2D" id=9]
+[sub_resource type="RectangleShape2D" id=7]
 extents = Vector2( 373.192, 10 )
 
 [sub_resource type="RectangleShape2D" id=8]
@@ -135,7 +135,7 @@ shape = SubResource( 6 )
 
 [node name="CollisionShape2D" parent="Wall6" index="0"]
 position = Vector2( 4.03357, -442.922 )
-shape = SubResource( 9 )
+shape = SubResource( 7 )
 
 [node name="Door5" parent="." index="15" instance=ExtResource( 4 )]
 editor/display_folded = true
