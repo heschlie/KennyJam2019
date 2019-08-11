@@ -36,16 +36,19 @@ position = Vector2( 226.408, 192.656 )
 position = Vector2( 405.618, 268.379 )
 has_item = 1
 dialog = "This is a test!"
+item_dialog = "Oh thanks!"
 
 [node name="Npc2" parent="." instance=ExtResource( 5 )]
 position = Vector2( 227.43, 362.804 )
-has_item = 2
 wants_item = 1
+has_item = 2
+item_dialog = "Noice"
 
 [node name="Npc3" parent="." instance=ExtResource( 5 )]
-position = Vector2( 57.7599, 262.627 )
-has_item = 3
+position = Vector2( 56.8574, 262.627 )
 wants_item = 2
+has_item = 3
+item_dialog = "Fucking hell"
 
 [node name="Door" parent="." instance=ExtResource( 6 )]
 position = Vector2( 341.97, 190.804 )

@@ -1,7 +1,8 @@
 extends Character
 
-export (Constants.ITEMS) var has_item
 export (Constants.ITEMS) var wants_item
+export (Constants.ITEMS) var has_item
+
 export (String, MULTILINE) var dialog = 'Hello.'
 export (String, MULTILINE) var item_dialog = 'Hello.'
 
