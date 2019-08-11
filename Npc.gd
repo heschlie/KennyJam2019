@@ -1,6 +1,7 @@
 extends Character
 
-
+export (Constants.ITEMS) var has_item
+export (Constants.ITEMS) var wants_item
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

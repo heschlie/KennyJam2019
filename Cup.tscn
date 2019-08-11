@@ -1,9 +1,0 @@
-[gd_scene load_steps=4 format=2]
-
-[ext_resource path="res://Item.tscn" type="PackedScene" id=1]
-[ext_resource path="res://assets/generic_items/genericItems_spritesheet_colored.genericItem_color_003.atlastex" type="Texture" id=2]
-[ext_resource path="res://Cup.gd" type="Script" id=3]
-
-[node name="Cup" instance=ExtResource( 1 )]
-texture = ExtResource( 2 )
-script = ExtResource( 3 )

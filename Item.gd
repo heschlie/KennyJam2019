@@ -1,23 +1,29 @@
 extends TextureRect
 class_name Item
 
-export var current_item = 'cup'
-var items = {
-	'cup': "res://assets/generic_items/genericItems_spritesheet_colored.genericItem_color_003.atlastex"
+export (Constants.ITEMS) var current_item
+onready var items = {
+	Constants.ITEMS.Stapler: load_image("res://assets/tankRed_barrel2_outline.png"),
+	Constants.ITEMS.Capsule: load_image("res://genericItem_color_054.png"),
+	Constants.ITEMS.Beard: load_image("res://facialHair_blonde (12).png"),
+	Constants.ITEMS.Morningstar: load_image("res://item_toolFlail.png"),
+	Constants.ITEMS.Workshop: load_image("res://hexagonTile_07.png"),
+	Constants.ITEMS.Deed: load_image("res://genericItem_color_037.png")
 }
-
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	set_texture(load(items['cup']))
+	set_texture(items[Constants.ITEMS.Stapler])
 	pass # Replace with function body.
 
 func set_current_item(name: String):
 	self.current_item = name
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+func load_image(path: String) -> ImageTexture:
+	var img = Image.new()
+	var imageTex = ImageTexture.new()
+	
+	img.load(path)
+	imageTex.create_from_image(img)
+	
+	return imageTex
