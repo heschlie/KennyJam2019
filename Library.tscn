@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://BaseLevel.tscn" type="PackedScene" id=1]
 [ext_resource path="res://PawnShop.tres" type="TileSet" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://Door.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Player.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Bookshelf.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Libarian.tscn" type="PackedScene" id=7]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 98.885, 10 )
@@ -86,6 +87,10 @@ position = Vector2( 90, -40 )
 
 [node name="Bookshelf14" parent="." index="20" instance=ExtResource( 6 )]
 position = Vector2( -10, -150 )
+
+[node name="Libarian" parent="." index="21" instance=ExtResource( 7 )]
+position = Vector2( -100, -140 )
+has_item = 1
 
 [editable path="Wall"]
 
