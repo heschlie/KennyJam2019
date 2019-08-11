@@ -50,7 +50,7 @@ tracks/0/keys = {
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
 
-[node name="EastSide" index="0" instance=ExtResource( 1 )]
+[node name="EastSide" instance=ExtResource( 1 )]
 
 [node name="TileMap" type="TileMap" parent="." index="1"]
 scale = Vector2( 3, 3 )

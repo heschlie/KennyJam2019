@@ -7,7 +7,7 @@
 wants_item = 4
 has_item = 6
 dialog = "I wish I could find a way to impress that girl across town."
-item_dialog = "Oh, boy.  With this I will for sure be able to catch her eye."
+item_dialog = "Oh, boy.  With this beard I will be able to catch her eye for sure."
 
 [node name="Sprite" parent="." index="0"]
 texture = ExtResource( 2 )
