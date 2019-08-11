@@ -4,6 +4,7 @@ class_name Door
 export (String) var target_scene = "res://LevelName.tscn"
 
 var player: Character
+var triggered = false
 
 func _init():
 	add_to_group('interactable')
@@ -19,3 +20,7 @@ func _process(delta):
 
 func set_player(player: Character):
 	self.player = player
+
+func _on_Door_area_exited(area):
+	print('exit')
+	pass # Replace with function body.

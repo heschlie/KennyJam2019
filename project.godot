@@ -14,11 +14,6 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://Character.gd"
 }, {
-"base": "Item",
-"class": "Cup",
-"language": "GDScript",
-"path": "res://Cup.gd"
-}, {
 "base": "Area2D",
 "class": "Door",
 "language": "GDScript",
@@ -36,7 +31,6 @@ _global_script_classes=[ {
 } ]
 _global_script_class_icons={
 "Character": "",
-"Cup": "",
 "Door": "",
 "Item": "",
 "Player": ""

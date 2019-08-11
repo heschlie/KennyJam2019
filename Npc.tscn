@@ -1,7 +1,30 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Character.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Npc.gd" type="Script" id=2]
+[ext_resource path="res://assets/Kenney Future.ttf" type="DynamicFontData" id=3]
 
-[node name="Npc" index="0" instance=ExtResource( 1 )]
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 3.84346, 4.04831 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 10
+font_data = ExtResource( 3 )
+
+[node name="Npc" instance=ExtResource( 1 )]
 script = ExtResource( 2 )
+speed = 150
+
+[node name="Hitbox" type="Area2D" parent="." index="2"]
+editor/display_folded = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox" index="0"]
+shape = SubResource( 1 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." index="3"]
+margin_left = -18.783
+margin_top = -48.7864
+margin_right = 21.217
+margin_bottom = -8.78644
+custom_fonts/normal_font = SubResource( 2 )
+text = "This is a test"

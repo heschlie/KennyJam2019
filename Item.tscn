@@ -3,4 +3,6 @@
 [ext_resource path="res://Item.gd" type="Script" id=1]
 
 [node name="Item" type="TextureRect"]
+stretch_mode = 5
 script = ExtResource( 1 )
+current_item = 4
