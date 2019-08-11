@@ -5,6 +5,8 @@ export (Constants.ITEMS) var wants_item
 export (String, MULTILINE) var dialog = 'Hello.'
 
 var player: Player
+onready var dialogBox = $Sprite/Container/Label
+onready var anim = $AnimationPlayer
 
 func _init():
 	add_to_group('npcs')
@@ -14,7 +16,7 @@ func set_player(player: Player):
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	dialogBox.set_text(dialog)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -22,4 +24,8 @@ func _process(delta):
 		action()
 
 func action():
+	anim.play("fade")
 	print('hello')
+
+func _on_Hitbox_area_exited(area):
+	anim.play_backwards("fade")

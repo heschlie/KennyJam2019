@@ -41,5 +41,5 @@ position = Vector2( 341.97, 190.804 )
 target_scene = "res://TestSubLevel.tscn"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Door"]
-position = Vector2( 685.003, 378.557 )
+position = Vector2( 685.842, 377.803 )
 shape = SubResource( 1 )
