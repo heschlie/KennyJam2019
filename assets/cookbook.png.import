@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/cookbook.png-5f346dc2aadac3b78e0ffe060a475c43.stex"
+path="res://.import/cookbook.png-c8dc535faa7fe32189380ab2ed910b7b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://cookbook.png"
-dest_files=[ "res://.import/cookbook.png-5f346dc2aadac3b78e0ffe060a475c43.stex" ]
+source_file="res://assets/cookbook.png"
+dest_files=[ "res://.import/cookbook.png-c8dc535faa7fe32189380ab2ed910b7b.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
