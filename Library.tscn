@@ -1,0 +1,69 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://BaseLevel.tscn" type="PackedScene" id=1]
+[ext_resource path="res://PawnShop.tres" type="TileSet" id=2]
+[ext_resource path="res://Wall.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Door.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Player.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Bookshelf.tscn" type="PackedScene" id=6]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 46.0746, 10 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 16.8062, 10 )
+
+[node name="Library" instance=ExtResource( 1 )]
+
+[node name="TileMap" type="TileMap" parent="." index="1"]
+tile_set = ExtResource( 2 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( -196612, 0, 17, -196611, 0, 18, -196610, 0, 18, -196609, 0, 18, -262144, 0, 18, -262143, 0, 18, -262142, 0, 18, -262141, 0, 19, -131076, 0, 131089, -131075, 0, 131090, -131074, 0, 131090, -131073, 0, 131090, -196608, 0, 131090, -196607, 0, 131090, -196606, 0, 131090, -196605, 0, 131091, -65540, 0, 131089, -65539, 0, 131090, -65538, 0, 131090, -65537, 0, 131090, -131072, 0, 131090, -131071, 0, 131090, -131070, 0, 131090, -131069, 0, 131091, -4, 0, 131089, -3, 0, 131090, -2, 0, 131090, -1, 0, 131090, -65536, 0, 131090, -65535, 0, 131090, -65534, 0, 131090, -65533, 0, 131091, 65532, 0, 131089, 65533, 0, 131090, 65534, 0, 131090, 65535, 0, 131090, 0, 0, 131090, 1, 0, 131090, 2, 0, 131090, 3, 0, 131091, 131068, 0, 131089, 131069, 0, 131090, 131070, 0, 131090, 131071, 0, 131090, 65536, 0, 131090, 65537, 0, 131090, 65538, 0, 131090, 65539, 0, 131091, 196604, 0, 131089, 196605, 0, 131090, 196606, 0, 131090, 196607, 0, 131090, 131072, 0, 131090, 131073, 0, 131090, 131074, 0, 131090, 131075, 0, 131091, 262140, 0, 196625, 262141, 0, 196626, 262142, 0, 196626, 262143, 0, 131090, 196608, 0, 131090, 196609, 0, 196626, 196610, 0, 196626, 196611, 0, 196627 )
+
+[node name="Wall" parent="." index="2" instance=ExtResource( 3 )]
+position = Vector2( -0.418121, 81.1155 )
+
+[node name="CollisionShape2D" parent="Wall" index="0"]
+shape = SubResource( 1 )
+
+[node name="Door" parent="." index="3" instance=ExtResource( 4 )]
+position = Vector2( 0, 71.9168 )
+target_scene = "res://Town.tscn"
+
+[node name="CollisionShape2D" parent="Door" index="0"]
+shape = SubResource( 2 )
+
+[node name="Player" parent="." index="4" instance=ExtResource( 5 )]
+position = Vector2( 0, 47.6658 )
+
+[node name="Bookshelf" parent="." index="5" instance=ExtResource( 6 )]
+position = Vector2( 5.47049, 26.3416 )
+
+[node name="Bookshelf8" parent="." index="6" instance=ExtResource( 6 )]
+position = Vector2( -20, -24.6691 )
+
+[node name="Bookshelf2" parent="." index="7" instance=ExtResource( 6 )]
+position = Vector2( -36.3417, 47.6658 )
+
+[node name="Bookshelf5" parent="." index="8" instance=ExtResource( 6 )]
+position = Vector2( 25.9584, 0 )
+
+[node name="Bookshelf9" parent="." index="9" instance=ExtResource( 6 )]
+position = Vector2( 25.9584, 26.3416 )
+
+[node name="Bookshelf4" parent="." index="10" instance=ExtResource( 6 )]
+position = Vector2( -15.0175, 26.3416 )
+
+[node name="Bookshelf6" parent="." index="11" instance=ExtResource( 6 )]
+position = Vector2( -20, -46.4114 )
+
+[node name="Bookshelf3" parent="." index="12" instance=ExtResource( 6 )]
+position = Vector2( -36.3416, 26.3416 )
+
+[node name="Bookshelf7" parent="." index="13" instance=ExtResource( 6 )]
+position = Vector2( 25.9584, -20 )
+
+[editable path="Wall"]
+
+[editable path="Door"]
