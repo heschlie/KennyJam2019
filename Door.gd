@@ -14,8 +14,8 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	if overlaps_area(player.action_box) and Input.is_action_pressed("interact"):
-		SceneChanger.change_scene(target_scene)
+	if overlaps_area(player.action_box) and Input.is_action_just_released("interact"):
+		SceneChanger.change_scene(target_scene, player)
 
 func set_player(player: Character):
 	self.player = player

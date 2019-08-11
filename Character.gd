@@ -1,7 +1,7 @@
 extends KinematicBody2D
 class_name Character
 
-export (int) var speed = 200
+export (int) var speed = 100
 var velocity = Vector2()
 var action_box: Area2D
 
