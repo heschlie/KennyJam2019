@@ -7,12 +7,12 @@
 [ext_resource path="res://Football.tscn" type="PackedScene" id=5]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 18.2313, 10 )
+extents = Vector2( 20.1732, 10 )
 
 [sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 32.933, 10 )
 
-[node name="FootballHouse" instance=ExtResource( 1 )]
+[node name="FootballHouse" index="0" instance=ExtResource( 1 )]
 
 [node name="TileMap" type="TileMap" parent="." index="1"]
 tile_set = ExtResource( 2 )
