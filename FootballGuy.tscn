@@ -5,6 +5,7 @@
 
 [node name="FootballGuy" index="0" instance=ExtResource( 1 )]
 dialog = "I wish I could return to the glory days when I was good at football...."
+item_dialog = "Wow, thanks!  With this time capsule I can change everything...!"
 
 [node name="Sprite" parent="." index="0"]
 texture = ExtResource( 2 )

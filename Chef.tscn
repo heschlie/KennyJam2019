@@ -7,6 +7,7 @@
 wants_item = 1
 has_item = 2
 dialog = "Gotta impress my boss.  It's my first day as a chef!"
+item_dialog = "Here is my time capsule.  I don't have time bury it now."
 
 [node name="Sprite" parent="." index="0"]
 texture = ExtResource( 2 )

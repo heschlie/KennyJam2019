@@ -5,6 +5,7 @@
 
 [node name="PawnGuy" index="0" instance=ExtResource( 1 )]
 dialog = "Bring me something valuable to pawn for your house deed.  "
+item_dialog = "Wow, this is amazingly rare!  I'll pawn your deed back for this!!"
 
 [node name="Sprite" parent="." index="0"]
 texture = ExtResource( 2 )
