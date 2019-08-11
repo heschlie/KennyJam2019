@@ -1,0 +1,23 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Npc.tscn" type="PackedScene" id=1]
+
+[node name="Sign" instance=ExtResource( 1 )]
+dialog = "Welcome to the East Side!"
+
+[node name="Sprite" parent="." index="0"]
+texture = null
+
+[node name="Container" parent="Sprite" index="1"]
+margin_left = -250.916
+margin_top = -335.076
+margin_right = 255.084
+margin_bottom = -52.0764
+
+[node name="NinePatchRect" parent="Sprite/Container" index="0"]
+margin_bottom = 282.0
+
+[node name="Label" parent="Sprite/Container" index="1"]
+margin_top = 79.0
+margin_bottom = 202.0
+text = "Welcome to the East Side!"

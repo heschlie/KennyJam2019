@@ -39,13 +39,13 @@ _global_script_class_icons={
 [application]
 
 config/name="kennyJam"
-run/main_scene="res://Town.tscn"
+run/main_scene="res://PawnShop.tscn"
 config/icon="res://icon.png"
 
 [autoload]
 
 SceneChanger="*res://SceneChanger.tscn"
-Constants="*res://Constants.gd"
+Constants="*res://Constants.tscn"
 
 [display]
 
@@ -89,3 +89,7 @@ interact={
 
 quality/2d/use_pixel_snap=true
 environment/default_environment="res://default_env.tres"
+
+[scene]
+
+scene=false
